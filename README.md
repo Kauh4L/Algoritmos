@@ -1,18 +1,21 @@
-# Projeto: Algoritmos de Ordenação e Grafos
+# Algoritmos de Ordenação e Caminhos Mínimos
 
-## Descrição
-Este projeto implementa e analisa três algoritmos clássicos:
+## 📌 Descrição do Projeto
+
+Este projeto implementa e analisa três algoritmos clássicos da computação:
 
 - Bubble Sort
 - Quick Sort
 - Algoritmo de Dijkstra
 
-## Linguagem
-C (C99)
+O objetivo é estudar o comportamento dos algoritmos na prática, comparando desempenho e demonstrando funcionamento em grafos.
 
-## Como compilar
+---
 
-Use o GCC:
+## 🧠 Linguagem Utilizada
 
-```bash
-gcc main.c -o main
+- Linguagem C (padrão C99)
+
+---
+
+## 📁 Estrutura do Projeto
