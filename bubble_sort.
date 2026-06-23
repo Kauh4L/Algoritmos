@@ -1,0 +1,45 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+void bubbleSort(int vetor[], int n) {
+    int i, j, temp;
+
+    for(i = 0; i < n - 1; i++) {
+        for(j = 0; j < n - i - 1; j++) {
+            if(vetor[j] > vetor[j + 1]) {
+                temp = vetor[j];
+                vetor[j] = vetor[j + 1];
+                vetor[j + 1] = temp;
+            }
+        }
+    }
+}
+
+int main() {
+    int n = 1000;
+    int vetor[n];
+
+    srand(time(NULL));
+
+for(int j=0; j<10; j++){
+    // Preenche o vetor com números aleatórios
+    for(int i = 0; i < n; i++) {
+        vetor[i] = rand() % 10000;
+    }
+
+    clock_t inicio, fim;
+
+    inicio = clock();
+
+    bubbleSort(vetor, n);
+
+    fim = clock();
+
+    double tempo = (double)(fim - inicio) / CLOCKS_PER_SEC;
+
+    printf("Tempo: %f segundos\n", tempo);
+    n = n - 100;
+}
+    return 0;
+}
